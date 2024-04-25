@@ -27,6 +27,17 @@
       <name>Test Project Site</name>
       <url>file:///tmp/maven-project-site</url>
     </site>
+	<repository>
+		<id>nexus</id>
+		<name>Sundar Release Nexus</name>
+		<url>http://54.218.12.85:8081//admin/repository/repositories:Nexus/</url>
+	</repository>
+	
+	<snapshotRepository>
+		<id>nexus</id>
+		<name>Sundar IT Snapshots Nexus Repo</name>
+		<url>http://54.218.12.85:8081/admin/repository/repositories:Nexus_snapshot</url>
+	</snapshotRepository>	
   </distributionManagement>
 
   <build>
@@ -161,19 +172,4 @@
   <prerequisites>
     <maven>3.0.3</maven>
   </prerequisites>
-         <distributionManagement>  
-	<repository>
-		<id>nexus</id>
-		<name>Sundar Release Nexus</name>
-		<url>http://54.218.12.85:8081//admin/repository/repositories:Nexus/</url>
-	</repository>
-	
-	<snapshotRepository>
-		<id>nexus</id>
-		<name>Sundar IT Snapshots Nexus Repo</name>
-		<url>http://54.218.12.85:8081/admin/repository/repositories:Nexus_snapshot</url>
-	</snapshotRepository>	
-</distributionManagement>
-
-
 </project>
